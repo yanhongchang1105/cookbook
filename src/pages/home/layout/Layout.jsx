@@ -17,7 +17,7 @@ import connect from 'utils/connect'
 @connect({
     mapState: (state) => {
         return {
-            checked: state.profile.checked
+            checked: state.getIn(['layout', 'checked'])
         }
     }
 })

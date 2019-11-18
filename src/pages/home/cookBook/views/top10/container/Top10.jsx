@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Top10UI from '../ui/Top10UI'
 const mapState = (state) => {
     return {
-        list: state.cookbook.list
+        list: state.getIn(['cookbook', 'list'])
     }
 }
 class Top10 extends Component {

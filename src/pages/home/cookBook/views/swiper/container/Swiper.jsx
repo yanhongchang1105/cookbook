@@ -5,7 +5,7 @@ import { asyncLoadData } from '../../../ActionCreator'
 
 const mapState = (state) => {
     return {
-        list: state.cookbook.list
+        list: state.getIn(['cookbook', 'list'])
     }
 }
 
